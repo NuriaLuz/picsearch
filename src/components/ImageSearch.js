@@ -1,3 +1,12 @@
 import React from 'react'
-import axios from 'axios'
 
+const ImageSearch = (props) => {
+    const images = props.images.map(image => { return <img src={image.urls.regular}/>});
+
+    return <div>
+        {images}
+    </div>
+}
+
+
+export default ImageSearch
